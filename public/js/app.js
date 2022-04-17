@@ -5493,6 +5493,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -5544,6 +5549,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5728,6 +5738,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -28936,24 +28966,36 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center" }, [
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
-        [_vm._v("بحث")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
-        [_vm._v("العلاج")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/volunteer" } },
-        [_vm._v("متطوع")]
-      ),
+    return _c("nav", { staticClass: "navbar navbar-light bg-light" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("img", {
+          staticClass: "rounded-circle",
+          attrs: { src: "/imgs/ehsan.png", alt: "", width: "60", height: "60" },
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center" }, [
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
+            [_vm._v("بحث")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
+            [_vm._v("العلاج")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-primary m-1",
+              attrs: { href: "/volunteer" },
+            },
+            [_vm._v("متطوع")]
+          ),
+        ]),
+      ]),
     ])
   },
   function () {
@@ -29116,7 +29158,10 @@ var render = function () {
           _vm._v(" "),
           _c(
             "label",
-            { staticClass: "form-check-label", attrs: { for: "nameradio" } },
+            {
+              staticClass: "form-check-label m-2",
+              attrs: { for: "nameradio" },
+            },
             [_vm._v("\n                بالاسم\n            ")]
           ),
         ]),
@@ -29148,7 +29193,10 @@ var render = function () {
           _vm._v(" "),
           _c(
             "label",
-            { staticClass: "form-check-label", attrs: { for: "activesradio" } },
+            {
+              staticClass: "form-check-label m-2",
+              attrs: { for: "activesradio" },
+            },
             [_vm._v("\n                بالمادة الفعالة\n            ")]
           ),
         ]),
@@ -29180,7 +29228,7 @@ var render = function () {
           _vm._v(" "),
           _c(
             "label",
-            { staticClass: "form-check-label", attrs: { for: "expdate" } },
+            { staticClass: "form-check-label m-2", attrs: { for: "expdate" } },
             [_vm._v("\n                بتاريخ الصلاحية\n            ")]
           ),
         ]),
@@ -29212,7 +29260,7 @@ var render = function () {
           _vm._v(" "),
           _c(
             "label",
-            { staticClass: "form-check-label", attrs: { for: "exp" } },
+            { staticClass: "form-check-label m-2", attrs: { for: "exp" } },
             [_vm._v("\n                المنتهي الصلاحية\n            ")]
           ),
         ]),
@@ -29296,24 +29344,36 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center" }, [
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
-        [_vm._v("بحث")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
-        [_vm._v("العلاج")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/volunteer" } },
-        [_vm._v("متطوع")]
-      ),
+    return _c("nav", { staticClass: "navbar navbar-light bg-light" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("img", {
+          staticClass: "rounded-circle",
+          attrs: { src: "/imgs/ehsan.png", alt: "", width: "60", height: "60" },
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center" }, [
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
+            [_vm._v("بحث")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
+            [_vm._v("العلاج")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-primary m-1",
+              attrs: { href: "/volunteer" },
+            },
+            [_vm._v("متطوع")]
+          ),
+        ]),
+      ]),
     ])
   },
   function () {
@@ -29380,6 +29440,12 @@ var render = function () {
           _vm._m(1),
           _vm._v(" "),
           _c("div", { staticClass: "modal-body" }, [
+            _c(
+              "label",
+              { staticClass: "form-label", attrs: { for: "month" } },
+              [_vm._v("\n                الاسم\n            ")]
+            ),
+            _vm._v(" "),
             _c("input", {
               directives: [
                 {
@@ -29390,7 +29456,7 @@ var render = function () {
                 },
               ],
               staticClass: "form-control my-2",
-              attrs: { type: "text", placeholder: "الاسم" },
+              attrs: { type: "text", placeholder: "ogmantine,..." },
               domProps: { value: _vm.medicine.name },
               on: {
                 input: function ($event) {
@@ -29402,6 +29468,12 @@ var render = function () {
               },
             }),
             _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "form-label", attrs: { for: "month" } },
+              [_vm._v("\n                الكمية\n            ")]
+            ),
+            _vm._v(" "),
             _c("input", {
               directives: [
                 {
@@ -29412,7 +29484,7 @@ var render = function () {
                 },
               ],
               staticClass: "form-control my-2",
-              attrs: { type: "number", placeholder: "الكمية" },
+              attrs: { type: "number", placeholder: "4,10,19,.." },
               domProps: { value: _vm.medicine.quantity },
               on: {
                 input: function ($event) {
@@ -29424,6 +29496,12 @@ var render = function () {
               },
             }),
             _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "form-label", attrs: { for: "month" } },
+              [_vm._v("\n                تاريخ الصلاحية\n            ")]
+            ),
+            _vm._v(" "),
             _c("input", {
               directives: [
                 {
@@ -29434,7 +29512,7 @@ var render = function () {
                 },
               ],
               staticClass: "form-control my-2",
-              attrs: { type: "month" },
+              attrs: { type: "month", id: "month" },
               domProps: { value: _vm.medicine.exp },
               on: {
                 input: function ($event) {
@@ -29446,6 +29524,12 @@ var render = function () {
               },
             }),
             _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "form-label", attrs: { for: "month" } },
+              [_vm._v("\n                المكان\n            ")]
+            ),
+            _vm._v(" "),
             _c("input", {
               directives: [
                 {
@@ -29456,7 +29540,7 @@ var render = function () {
                 },
               ],
               staticClass: "form-control my-2",
-              attrs: { type: "text", placeholder: "المكان" },
+              attrs: { type: "text", placeholder: "pharmacy,..." },
               domProps: { value: _vm.medicine.position },
               on: {
                 input: function ($event) {
@@ -29468,6 +29552,12 @@ var render = function () {
               },
             }),
             _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "form-label", attrs: { for: "month" } },
+              [_vm._v("\n                المواد الفعالة\n            ")]
+            ),
+            _vm._v(" "),
             _c("input", {
               directives: [
                 {
@@ -29478,7 +29568,7 @@ var render = function () {
                 },
               ],
               staticClass: "form-control my-2",
-              attrs: { type: "text", placeholder: "المواد الفعالة" },
+              attrs: { type: "text", placeholder: "zinc,.." },
               domProps: { value: _vm.medicine.actives },
               on: {
                 input: function ($event) {
@@ -29630,24 +29720,36 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center" }, [
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
-        [_vm._v("بحث")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
-        [_vm._v("العلاج")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/volunteer" } },
-        [_vm._v("متطوع")]
-      ),
+    return _c("nav", { staticClass: "navbar navbar-light bg-light" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("img", {
+          staticClass: "rounded-circle",
+          attrs: { src: "/imgs/ehsan.png", alt: "", width: "60", height: "60" },
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center" }, [
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
+            [_vm._v("بحث")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
+            [_vm._v("العلاج")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-primary m-1",
+              attrs: { href: "/volunteer" },
+            },
+            [_vm._v("متطوع")]
+          ),
+        ]),
+      ]),
     ])
   },
   function () {

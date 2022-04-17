@@ -17,12 +17,27 @@
                 <h5 class="modal-title">اضافة/صرف علاج</h5>
             </div>
             <div class="modal-body">
-
-                <input type="text" class="form-control my-2" placeholder="الاسم" v-model="medicine.name">
-                <input type="number" class="form-control my-2" placeholder="الكمية" v-model="medicine.quantity">
-                <input type="month" class="form-control my-2" v-model="medicine.exp">
-                <input type="text" class="form-control my-2" placeholder="المكان" v-model="medicine.position">
-                <input type="text" class="form-control my-2" placeholder="المواد الفعالة" v-model="medicine.actives">
+                
+                <label class="form-label" for="month">
+                    الاسم
+                </label>
+                <input type="text" class="form-control my-2" placeholder="ogmantine,..." v-model="medicine.name">
+                <label class="form-label" for="month">
+                    الكمية
+                </label>
+                <input type="number" class="form-control my-2" placeholder="4,10,19,.." v-model="medicine.quantity">
+                <label class="form-label" for="month">
+                    تاريخ الصلاحية
+                </label>
+                <input type="month" class="form-control my-2" id="month" v-model="medicine.exp">
+                <label class="form-label" for="month">
+                    المكان
+                </label>
+                <input type="text" class="form-control my-2" placeholder="pharmacy,..." v-model="medicine.position">
+                <label class="form-label" for="month">
+                    المواد الفعالة
+                </label>
+                <input type="text" class="form-control my-2" placeholder="zinc,.." v-model="medicine.actives">
 
 
             </div>
