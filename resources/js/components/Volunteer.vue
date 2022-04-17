@@ -1,10 +1,15 @@
 <template>
     <div>
-        <div class="text-center">
-            <a href="/search" class="btn btn-primary m-1">بحث</a>
-            <a href="/content" class="btn btn-primary m-1">العلاج</a>
-            <a href="/volunteer" class="btn btn-primary m-1">متطوع</a>
+        <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <img src="/imgs/ehsan.png" alt="" width="60" height="60" class="rounded-circle">
+            <div class="text-center">
+                <a href="/search" class="btn btn-primary m-1">بحث</a>
+                <a href="/content" class="btn btn-primary m-1">العلاج</a>
+                <a href="/volunteer" class="btn btn-primary m-1">متطوع</a>
+            </div>
         </div>
+        </nav>
         <div>
         <div class="modal-dialog">
             <div class="modal-content">
