@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Medicine;
-use App\Models\Part;
+use App\Models\part as Part;
 use Carbon\Carbon;
 
 class MedicineController extends Controller
