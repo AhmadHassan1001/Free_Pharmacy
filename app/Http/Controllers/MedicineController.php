@@ -70,7 +70,6 @@ class MedicineController extends Controller
             $medicine=new Medicine();
             $medicine->name=$request->name;
             $medicine->active_ingredient=$request->actives;
-            $medicine->quantity=$request->quantity;
             if(is_null($medicine->active_ingredient))$medicine->active_ingredient='';
             $medicine->timestamps = false;
             $medicine->save();
