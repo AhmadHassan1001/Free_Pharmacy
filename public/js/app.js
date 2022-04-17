@@ -5405,6 +5405,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -28810,24 +28814,36 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center" }, [
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
-        [_vm._v("بحث")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
-        [_vm._v("العلاج")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-primary m-1", attrs: { href: "/volunteer" } },
-        [_vm._v("متطوع")]
-      ),
+    return _c("nav", { staticClass: "navbar navbar-light bg-light" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("img", {
+          staticClass: "rounded-circle",
+          attrs: { src: "/imgs/ehsan.png", alt: "", width: "60", height: "60" },
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center" }, [
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
+            [_vm._v("بحث")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
+            [_vm._v("العلاج")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-primary m-1",
+              attrs: { href: "/volunteer" },
+            },
+            [_vm._v("متطوع")]
+          ),
+        ]),
+      ]),
     ])
   },
   function () {
