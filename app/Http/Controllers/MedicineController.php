@@ -14,7 +14,7 @@ class MedicineController extends Controller
     public function getmedicines(){
         $medicines=Medicine::orderBy('name')->get();
         foreach ($medicines as $med)  {
-            $med->quantity=Part::where('medicine',$med->id)->where('exp', '>',Carbon::now())->sum('Quantity');
+            $med->quantity=Part::where('Medicine',$med->id)->where('EXP', '>',Carbon::now())->sum('Quantity');
         
         }
         return response()->json(['status'=>'success','data'=>$medicines]);
@@ -22,14 +22,14 @@ class MedicineController extends Controller
     }
     public function getparts($id){
         $medicines=Medicine::find($id);
-        $medicines->quantity=Part::where('medicine',$id)->where('exp', '>',Carbon::now())->sum('Quantity');
-        $medicines->parts=Part::where('medicine',$id)->orderBy('exp', 'desc')->get();
+        $medicines->quantity=Part::where('Medicine',$id)->where('EXP', '>',Carbon::now())->sum('Quantity');
+        $medicines->parts=Part::where('Medicine',$id)->orderBy('EXP', 'desc')->get();
 
         return response()->json(['status'=>'success','data'=>$medicines]);
 
     }
     public function getpartsexpired(){
-        $medicines=Part::where('exp', '<=',Carbon::now())->get();;
+        $medicines=Part::where('EXP', '<=',Carbon::now())->get();;
         foreach ($medicines as $med)  {
             $med->name=Medicine::find($med->Medicine)->name;
         
@@ -38,7 +38,7 @@ class MedicineController extends Controller
 
     }
     public function getpartsbyexp(Request $request){
-        $medicines=Part::where('exp', '=',$request->date)->get();;
+        $medicines=Part::where('EXP', '=',$request->date)->get();;
         foreach ($medicines as $med)  {
             $med->name=Medicine::find($med->Medicine)->name;
         
@@ -50,7 +50,7 @@ class MedicineController extends Controller
     public function getmedicinebyname(Request $request){
         $medicines=Medicine::where('name',$request->name)->get();
         foreach ($medicines as $med)  {
-            $med->quantity=Part::where('medicine',$med->id)->where('exp', '>',Carbon::now())->sum('Quantity');
+            $med->quantity=Part::where('Medicine',$med->id)->where('EXP', '>',Carbon::now())->sum('Quantity');
         
         }
         return response()->json(['status'=>'success','data'=>$medicines]);
@@ -59,7 +59,7 @@ class MedicineController extends Controller
     public function getmedicinesbyactives(Request $request){
         $medicines=Medicine::where('active_ingredient', 'like', '%' . $request->actives . '%')->get();
         foreach ($medicines as $med)  {
-            $med->quantity=Part::where('medicine',$med->id)->where('exp', '>',Carbon::now())->sum('Quantity');
+            $med->quantity=Part::where('Medicine',$med->id)->where('EXP', '>',Carbon::now())->sum('Quantity');
         
         }
         return response()->json(['status'=>'success','data'=>$medicines]);
@@ -82,7 +82,7 @@ class MedicineController extends Controller
             $medicine->update();
         }
         $id=Medicine::where('name',$request->name)->first()->id;
-        if(is_null(Part::where('Medicine',$id)->where('position',$request->position)->where('exp',$request->exp)->first())){
+        if(is_null(Part::where('Medicine',$id)->where('position',$request->position)->where('EXP',$request->exp)->first())){
             $part=new Part();
             $part->Medicine=Medicine::where('name',$request->name)->first()->id;
             $part->Quantity=$request->quantity;
@@ -91,7 +91,7 @@ class MedicineController extends Controller
             $part->timestamps = false;
             $part->save();
         }else{
-            $part=Part::where('Medicine',$id)->where('position',$request->position)->where('exp',$request->exp)->first();
+            $part=Part::where('Medicine',$id)->where('position',$request->position)->where('EXP',$request->exp)->first();
             $part->Quantity=$part->Quantity+$request->quantity;
             $part->timestamps = false;
             $part->update();
@@ -101,7 +101,7 @@ class MedicineController extends Controller
     }
     public function giveparts(Request $request){
         $id=Medicine::where('name',$request->name)->first()->id;
-        $part=Part::where('Medicine',$id)->where('position',$request->position)->where('exp',$request->exp)->first();
+        $part=Part::where('Medicine',$id)->where('position',$request->position)->where('EXP',$request->exp)->first();
         $part->Quantity=$part->Quantity-$request->quantity;
         $part->timestamps = false;
         $part->update();
