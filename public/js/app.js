@@ -29261,7 +29261,7 @@ var render = function () {
           _c(
             "label",
             { staticClass: "form-check-label m-2", attrs: { for: "exp" } },
-            [_vm._v("\n                 الصلاحية\n            ")]
+            [_vm._v("\n                 المنتهي الصلاحية\n            ")]
           ),
         ]),
       ]),
@@ -44768,7 +44768,7 @@ Vue.compile = compileToFunctions;
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkfree_pharmacy"] = self["webpackChunkfree_pharmacy"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

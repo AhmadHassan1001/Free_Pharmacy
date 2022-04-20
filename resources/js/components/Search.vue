@@ -45,7 +45,7 @@
             
                 <input class="form-check-input" type="radio" name="searchradios" id="exp" v-model="searchtype" value="3">
                 <label class="form-check-label m-2" for="exp">
-                     الصلاحية
+                     المنتهي الصلاحية
                 </label>
                 </div>
             </div>
