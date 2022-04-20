@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +17,6 @@ Route::get('/content', function () {
     return view('content');
 });
 Route::get('/search', function () {
-    Artisan::call('cache:clear');
     return view('search');
 });
 Route::get('/volunteer', function () {
