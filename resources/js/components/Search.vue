@@ -19,7 +19,36 @@
             <input v-if="searchtype=='2'" type="month" class="form-control" id="dateInput" v-model="searchdate">
 
             
+            <div class="row">
+                <div class="form-check col-3">
+                <input class="form-check-input" type="radio" name="searchradios" id="nameradio" v-model="searchtype" value="0">
+                <label class="form-check-label m-2" for="nameradio">
+                    بالاسم
+                </label>
+                
+                </div>
+                <div class="form-check col-3">
             
+                <input class="form-check-input" type="radio" name="searchradios" id="activesradio" v-model="searchtype" value="1">
+                <label class="form-check-label m-2" for="activesradio">
+                    بالمادة الفعالة
+                </label>
+                </div>
+                <div class="form-check col-3">
+            
+                <input class="form-check-input" type="radio" name="searchradios" id="expdate" v-model="searchtype" value="2">
+                <label class="form-check-label m-2" for="expdate">
+                    بتاريخ الصلاحية
+                </label>
+                </div>
+                <div class="form-check col-3">
+            
+                <input class="form-check-input" type="radio" name="searchradios" id="exp" v-model="searchtype" value="3">
+                <label class="form-check-label m-2" for="exp">
+                     الصلاحية
+                </label>
+                </div>
+            </div>
             
             
             <button type="button" class="btn btn-primary col-6" @click="getResults">بحث</button>
