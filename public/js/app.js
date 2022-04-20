@@ -29261,7 +29261,7 @@ var render = function () {
           _c(
             "label",
             { staticClass: "form-check-label m-2", attrs: { for: "exp" } },
-            [_vm._v("\n                المنتهي الصلاحية\n            ")]
+            [_vm._v("\n                المنتهي \n            ")]
           ),
         ]),
       ]),
