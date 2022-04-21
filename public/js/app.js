@@ -5866,6 +5866,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -5903,6 +5904,10 @@ __webpack_require__.r(__webpack_exports__);
         _this2.resp = response.data;
       });
       this.medicine.exp = '';
+    },
+    logout: function logout() {
+      axios.post('../logout').then(function (response) {});
+      window.location.href = '../login';
     }
   }
 });
@@ -29432,12 +29437,52 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c("nav", { staticClass: "navbar navbar-light bg-light" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("img", {
+          staticClass: "rounded-circle",
+          attrs: { src: "/imgs/ehsan.png", alt: "", width: "60", height: "60" },
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center" }, [
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
+            [_vm._v("بحث")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
+            [_vm._v("العلاج")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-primary m-1",
+              attrs: { href: "/volunteer" },
+            },
+            [_vm._v("متطوع")]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-danger",
+              attrs: { type: "button" },
+              on: { click: _vm.logout },
+            },
+            [_vm._v("log out")]
+          ),
+        ]),
+      ]),
+    ]),
     _vm._v(" "),
     _c("div", [
       _c("div", { staticClass: "modal-dialog" }, [
         _c("div", { staticClass: "modal-content" }, [
-          _vm._m(1),
+          _vm._m(0),
           _vm._v(" "),
           _c("div", { staticClass: "modal-body" }, [
             _c(
@@ -29581,7 +29626,7 @@ var render = function () {
             }),
           ]),
           _vm._v(" "),
-          _vm._m(2),
+          _vm._m(1),
         ]),
       ]),
     ]),
@@ -29600,14 +29645,14 @@ var render = function () {
       [
         _c("div", { staticClass: "modal-dialog" }, [
           _c("div", { staticClass: "modal-content" }, [
-            _vm._m(3),
+            _vm._m(2),
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [
               _vm._v("\n        تاكيد اضافة:\n        "),
               _c("br"),
               _vm._v(" "),
               _c("table", { staticClass: "table" }, [
-                _vm._m(4),
+                _vm._m(3),
                 _vm._v(" "),
                 _c("tbody", [
                   _c("tr", [
@@ -29664,14 +29709,14 @@ var render = function () {
       [
         _c("div", { staticClass: "modal-dialog" }, [
           _c("div", { staticClass: "modal-content" }, [
-            _vm._m(5),
+            _vm._m(4),
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [
               _vm._v("\n        تاكيد الصرف:\n        "),
               _c("br"),
               _vm._v(" "),
               _c("table", { staticClass: "table" }, [
-                _vm._m(6),
+                _vm._m(5),
                 _vm._v(" "),
                 _c("tbody", [
                   _c("tr", [
@@ -29716,42 +29761,6 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("nav", { staticClass: "navbar navbar-light bg-light" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("img", {
-          staticClass: "rounded-circle",
-          attrs: { src: "/imgs/ehsan.png", alt: "", width: "60", height: "60" },
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-center" }, [
-          _c(
-            "a",
-            { staticClass: "btn btn-primary m-1", attrs: { href: "/search" } },
-            [_vm._v("بحث")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            { staticClass: "btn btn-primary m-1", attrs: { href: "/content" } },
-            [_vm._v("العلاج")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-primary m-1",
-              attrs: { href: "/volunteer" },
-            },
-            [_vm._v("متطوع")]
-          ),
-        ]),
-      ]),
-    ])
-  },
   function () {
     var _vm = this
     var _h = _vm.$createElement

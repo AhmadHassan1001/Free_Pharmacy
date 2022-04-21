@@ -7,6 +7,7 @@
                 <a href="/search" class="btn btn-primary m-1">بحث</a>
                 <a href="/content" class="btn btn-primary m-1">العلاج</a>
                 <a href="/volunteer" class="btn btn-primary m-1">متطوع</a>
+                <button type="button" class="btn btn-danger" @click="logout">log out</button>
             </div>
         </div>
         </nav>
@@ -161,6 +162,12 @@ export default {
                 this.resp=response.data;
             });
             this.medicine.exp='';
+        },
+        logout(){
+            axios.post('../logout',).then(response=>{
+                
+            });
+            window.location.href = '../login';
         },
     },
 }

@@ -19,7 +19,7 @@ Route::get('/content', function () {
 Route::get('/search', function () {
     return view('search');
 });
-Route::get('/volunteer', function () {
+Route::middleware('auth:sanctum')->get('/volunteer', function () {
     return view('volunteer');
 });
 Route::get('/content/{id}', function ($id) {
@@ -28,7 +28,7 @@ Route::get('/content/{id}', function ($id) {
 Route::get('/', function () {
     return redirect('content');
 });
-
-/*Auth::routes();
+Auth::routes();
+/*
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');*/
