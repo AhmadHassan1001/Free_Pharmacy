@@ -72,7 +72,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
-/** 
+
     ///Habd
     public function register(Request $request)
 
@@ -84,5 +84,5 @@ class RegisterController extends Controller
 
         return redirect($this->redirectPath());
 
-    }*/
+    }
 }
